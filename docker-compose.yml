@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+
+  web:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - '5000:5000'
+    environment:
+      FLASK_APP: 'hallo_web/app.py'
