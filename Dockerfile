@@ -6,4 +6,4 @@ ADD requirements.txt /app
 RUN pip install -r requirements.txt
 ADD . /app
 ENTRYPOINT ["python"]
-CMD ["hallo_web/app.py"]
+CMD ["app.py"]
