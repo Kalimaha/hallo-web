@@ -9,5 +9,18 @@ def hello():
     out = f'Hello, {name}!'
     return out
 
+@app.route('/sum')
+def sum():
+    x = request.args.get('x')
+    y = request.args.get('y')
+    sum = int(x) + int(y)
+    return str(sum)
+
+@app.route('/square')
+def square():
+    x = request.args.get('x')
+    square = int(x) * int(x)
+    return str(square)
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
