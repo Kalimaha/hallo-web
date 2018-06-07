@@ -29,5 +29,7 @@ def substraction():
     sub = int(x) - int(y)
     return str(sub)
 
+print("changes")
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
