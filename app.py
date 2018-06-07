@@ -22,12 +22,5 @@ def square():
     square = int(x) * int(x)
     return str(square)
 
-@app.route('/sub')
-def substraction():
-    x = request.args.get('x')
-    y = request.args.get('y')
-    sub = int(x) - int(y)
-    return str(sub)
-
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
